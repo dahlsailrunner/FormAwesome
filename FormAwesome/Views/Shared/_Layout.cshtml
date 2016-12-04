@@ -1,0 +1,26 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FormAwesome - TypeScript, Bootstrap, and Kendo for the win!</title>
+
+    <link type="text/css" href="~/bower_components/bootstrap/dist/css/bootstrap.min.css" rel="stylesheet" />
+    <link type="text/css" href="~/bower_components/kendo-ui/styles/kendo.common-material.min.css" rel="stylesheet" />
+    <link type="text/css" href="~/bower_components/kendo-ui/styles/kendo.material.min.css" rel="stylesheet" />
+
+    @Styles.Render("~/Content/css")
+
+    <script src="~/bower_components/jquery/dist/jquery.min.js"></script>
+    <script src="~/bower_components/kendo-ui/js/kendo.ui.core.min.js"></script>
+    <script src="~/bower_components/tether/dist/js/tether.min.js"></script>
+    <script src="~/bower_components/bootstrap/dist/js/bootstrap.min.js"></script>
+</head>
+<body>
+    
+    <div class="container body-content">
+        @RenderBody()                
+    </div>
+    
+</body>
+</html>

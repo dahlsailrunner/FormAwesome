@@ -1,0 +1,8 @@
+{
+  "resolution": "main",
+  "tree": {
+    "src": "https://raw.githubusercontent.com/DefinitelyTyped/DefinitelyTyped/f280890db108933cc9e30cf10580111c49ab0e04/kendo-ui/kendo-ui.d.ts",
+    "raw": "registry:dt/kendo-ui#2016.3.1029+20161130011541",
+    "typings": "https://raw.githubusercontent.com/DefinitelyTyped/DefinitelyTyped/f280890db108933cc9e30cf10580111c49ab0e04/kendo-ui/kendo-ui.d.ts"
+  }
+}
