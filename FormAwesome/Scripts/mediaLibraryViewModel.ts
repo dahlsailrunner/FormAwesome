@@ -1,6 +1,7 @@
 ﻿/// <reference path="../typings/globals/jquery/index.d.ts" />
 /// <reference path="../typings/globals/kendo-ui/index.d.ts" />
 import StringValue = UtilityClasses.StringValue;
+import Shelf = MediaLibraryClasses.Shelf;
 
 module MediaLibrary {
     export class ViewModel extends kendo.data.ObservableObject {        
@@ -31,18 +32,7 @@ module MediaLibrary {
         }
     }    
 
-    class Shelf extends kendo.data.ObservableObject {
-        shelfType: string;
-        shelfName: string;
-
-        constructor(type: string) {
-            super();
-            super.init(this);
-
-            this.set("shelfType", type);
-        }
-
-    }
+    
 }
 $(function () {
     var viewModel = new MediaLibrary.ViewModel();

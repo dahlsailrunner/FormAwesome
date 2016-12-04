@@ -6,6 +6,7 @@ var __extends = (this && this.__extends) || function (d, b) {
 /// <reference path="../typings/globals/jquery/index.d.ts" />
 /// <reference path="../typings/globals/kendo-ui/index.d.ts" />
 var StringValue = UtilityClasses.StringValue;
+var Shelf = MediaLibraryClasses.Shelf;
 var MediaLibrary;
 (function (MediaLibrary) {
     var ViewModel = (function (_super) {
@@ -32,15 +33,6 @@ var MediaLibrary;
         return ViewModel;
     }(kendo.data.ObservableObject));
     MediaLibrary.ViewModel = ViewModel;
-    var Shelf = (function (_super) {
-        __extends(Shelf, _super);
-        function Shelf(type) {
-            _super.call(this);
-            _super.prototype.init.call(this, this);
-            this.set("shelfType", type);
-        }
-        return Shelf;
-    }(kendo.data.ObservableObject));
 })(MediaLibrary || (MediaLibrary = {}));
 $(function () {
     var viewModel = new MediaLibrary.ViewModel();
