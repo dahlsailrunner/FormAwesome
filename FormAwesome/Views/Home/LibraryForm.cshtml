@@ -1,0 +1,43 @@
+﻿<h2>Media Library Manager</h2>
+<div id="mediaContainer">
+    <div class="row">
+        <div class="col-xs-12">
+            <div style="float:right;">
+                <div class="btn-group" role="group">
+                    <button id="btnGroupDrop1" type="button" class="btn btn-outline-primary dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        Add Shelf
+                    </button>
+                    <div class="dropdown-menu" data-bind="source: shelfOptions" data-template="newShelfOptionTemplate">
+                        @*<a class="dropdown-item" href="#">Dropdown link</a>
+                            <a class="dropdown-item" href="#">Dropdown link</a>*@
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div id="mediaShelfListing" data-bind="source: mediaShelves" data-template="shelfTemplate"></div>
+
+    <script id="newShelfOptionTemplate" type="text/x-kendo-template">
+        <a class="dropdown-item" data-bind="html: stringValue, click: addNewShelf"></a>
+    </script>
+
+    <script id="shelfTemplate" type="text/x-kendo-template">
+        <div class="col-xs-12">
+            <div class="card">
+                <div class="card-block card-inverse card-primary ">
+                    <h4 class="card-title" data-bind="html: shelfName"></h4>
+                    <h6 class="card-subtitle" data-bind="html: shelfType"></h6>
+                </div>
+                <div class="card-block">
+                    <div class="alert alert-success">Add shelf contents here.....</div>
+                    <label>Shelf Name</label>
+                    <input type="text" data-bind="value: shelfName" />
+                </div>
+            </div>
+        </div>        
+    </script>
+</div>
+
+
+<script src="~/Scripts/mediaLibraryViewModel.js" type="text/javascript"></script>

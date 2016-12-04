@@ -26,5 +26,10 @@ namespace FormAwesome.Controllers
 
             return View();
         }
+
+        public ActionResult LibraryForm()
+        {
+            return View();
+        }
     }
 }

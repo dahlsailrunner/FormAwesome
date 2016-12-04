@@ -20,5 +20,5 @@ module FormAwesomeIndex {
 }
 $(function () {
     var viewModel = new FormAwesomeIndex.ViewModel();
-    kendo.bind(document.body, viewModel);
+    kendo.bind($("#mainContainer"), viewModel);
 });
