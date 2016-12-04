@@ -11,7 +11,7 @@ To begin with, make sure you have NPM, BOWER, and TYPINGS installed.  (after npm
 
 1.  Create new ASP.NET MVC 6 project (not ASP.NET Core) -- no authentication.
 2.  Remove JavaScript nuget references -- Microsoft unobtrusive validation, bootstrap, jquery validation, jquery, and modernizr.
-3.  Remove the Scripts folder CONTENT (not the folder itself)
+3.  Remove the contents of the Scripts folder (not the folder itself)
 4.  Get rid of the project_readme.html file
 5.  Add a bower configuration file to the project (bower.json)
 6.  Install jquery, bootstrap 4, and kendo-ui.  These items will be in the bower.json file -- you could run `bower install` to pull them down if you are cloning this repo.
