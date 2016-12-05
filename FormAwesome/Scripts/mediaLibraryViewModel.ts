@@ -30,9 +30,7 @@ module MediaLibrary {
             var t = typeof (e);
             this.mediaShelves.push(new Shelf(e.currentTarget.innerHTML));
         }
-    }    
-
-    
+    }        
 }
 $(function () {
     var viewModel = new MediaLibrary.ViewModel();

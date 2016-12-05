@@ -13,6 +13,7 @@ var FormAwesomeIndex;
             _super.call(this);
             _super.prototype.init.call(this, this);
             this.ddChoice = "Second Choice";
+            this.helloViewModel = "Hello from the View Model!";
         }
         ViewModel.prototype.ddChanged = function () {
             alert("changed!! (to " + this.ddChoice + ")");

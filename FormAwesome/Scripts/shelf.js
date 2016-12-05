@@ -73,7 +73,6 @@ var MediaLibraryClasses;
             ];
         };
         Shelf.prototype.addNewItem = function (e) {
-            alert("adding");
             this.shelfContents.push(new ShelfItem("made-up"));
         };
         return Shelf;

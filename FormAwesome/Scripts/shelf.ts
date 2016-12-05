@@ -80,8 +80,7 @@
             ];
         }
 
-        addNewItem(e: any): void {
-            alert("adding");
+        addNewItem(e: any): void {            
             this.shelfContents.push(new ShelfItem("made-up"));
         }
     }    

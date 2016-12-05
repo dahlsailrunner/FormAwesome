@@ -4,12 +4,14 @@
 module FormAwesomeIndex {
     export class ViewModel extends kendo.data.ObservableObject {
         ddChoice: string;
+        helloViewModel: string;
 
         constructor() {
             super();
             super.init(this);
 
             this.ddChoice = "Second Choice";
+            this.helloViewModel = "Hello from the View Model!";
         }
 
 
